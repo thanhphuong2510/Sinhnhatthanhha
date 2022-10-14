@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Redirect or Open new Web page using JavaScript</title>
+</head>
+<body>
+<button onclick="openTab('https://errorsea.com')">Try it</button>
+<script>
+  function openTab(url) {
+    const link = document.createElement('a');
+    link.href = url;
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
+</script>
+</body>
+</html>
